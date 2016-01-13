@@ -1,0 +1,119 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-13 17:21+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: Tab1.qml:7
+msgid "Overview"
+msgstr "概览"
+
+#: Tab1.qml:38
+msgid "<b>Nexus 7 (2013) Wi-Fi</b>"
+msgstr ""
+
+#: Tab1.qml:49
+msgid "<b>Hardware Information</b>"
+msgstr "硬件信息"
+
+#: Tab1.qml:57
+msgid "Device: Nexus 7 (2013) Wi-Fi"
+msgstr ""
+
+#: Tab1.qml:66
+msgid "<b>Ubuntu Touch Information</b>"
+msgstr "Ubuntu Touch 信息"
+
+#: Tab1.qml:76
+msgid "Hostname: "
+msgstr "用户名"
+
+#: Tab1.qml:80
+msgid "ubuntu-phablet"
+msgstr ""
+
+#: Tab1.qml:86
+msgid "System Platform: "
+msgstr "系统平台"
+
+#: Tab1.qml:89
+msgid "armv7l"
+msgstr ""
+
+#: Tab1.qml:95
+msgid "Distro: "
+msgstr "发行版本"
+
+#: Tab1.qml:99
+msgid "Ubuntu 15.04"
+msgstr ""
+
+#: Tab1.qml:105
+msgid "Desktop Enviroment: "
+msgstr "桌面环境"
+
+#: Tab1.qml:109
+msgid "Ubuntu Touch"
+msgstr ""
+
+#: Tab3.qml:6
+msgid "About"
+msgstr "关于"
+
+#: Tab3.qml:49
+msgid "Tweak Tools for Ubuntu Touch"
+msgstr "Ubuntu Touch 优化工具"
+
+#: Tab3.qml:54
+msgid "This software is open source under GPLv3"
+msgstr "本软件是自由软件，遵循 GPLv3。"
+
+#: Tab3.qml:60
+msgid "Project site"
+msgstr "项目主页"
+
+#: Tab3.qml:62
+msgid ""
+"<a href=\"https://github.com/mutse/utouch-tweak/\">Project host on github</a>"
+msgstr "<a href=\"https://github.com/mutse/utouch-tweak/\">项目托管于 github</a>"
+
+#: Tab3.qml:70
+msgid "Author: Mutse Young"
+msgstr ""
+
+#: Tab3.qml:74
+msgid "Email: yyhoo2.young@gmail.com"
+msgstr ""
+
+#: Tab2.qml:6
+msgid "Tweak"
+msgstr ""
+
+#: Tab2.qml:37
+msgid "Window Desktop Mode"
+msgstr ""
+
+#: Tab2.qml:60 Tab2.qml:83
+msgid "Desktop Background"
+msgstr ""
+
+#: Tab2.qml:69 Tab2.qml:92
+msgid "Select..."
+msgstr ""
+
+#: ExternalPage.qml:8
+msgid "This is page xxx one"
+msgstr ""

@@ -1,0 +1,15 @@
+{
+    "name": "utouch-tweak.mutse",
+    "description": "description of utouch-tweak",
+    "architecture": "all",
+    "title": "utouch-tweak",
+    "hooks": {
+        "utouch-tweak": {
+            "apparmor": "utouch-tweak.apparmor",
+            "desktop": "utouch-tweak.desktop"
+        }
+    },
+    "version": "0.1",
+    "maintainer": "mutse <yyhoo2.young@gmail.com>",
+    "framework": "ubuntu-sdk-15.04"
+}
