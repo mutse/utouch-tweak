@@ -1,11 +1,7 @@
 import QtQuick 2.0
-//import QtSystemInfo 5.0
-//import SystemSettings 1.0
 import Ubuntu.Components 1.1
 import Ubuntu.Components.ListItems 0.1 as ListItem
-import "Readfile.js" as ReadFile
-//import Ubuntu.SystemSettings.StorageAbout 1.0
-//import Ubuntu.SystemSettings.Update 1.0
+//import "Readfile.js" as ReadFile
 
 /*!
     \brief MainView with a Label and Button elements.
@@ -30,63 +26,65 @@ MainView {
     width: units.gu(50)
     height: units.gu(70)
 
-    Tabs {
-        id: tabs
-
-        OverviewPage {
-            objectName: "Overview"
-        }
-
-        TweakPage {
-            objectName: "Tweak"
-        }
-
-        AboutPage {
-            objectName: "About"
-        }
-    }
-
-   /* PageStack {
+    PageStack {
         id: pageStack
         Component.onCompleted: push(tabs)
 
         Tabs {
             id: tabs
             Tab {
+                id: tab1
                 title: i18n.tr("Overview")
 
                 page: Loader {
-                     id: loader
-                     anchors.fill: parent
-                     source:  Qt.resolvedUrl("Tab1.qml")
-
-                     onLoaded: {
-                         console.log( loader.source + " is loaded")
-                     }
-                 }
+                    id: mainPage
+                    parent: tab1
+                    anchors{
+                        left:parent.left
+                        right: parent.right
+                        bottom: parent.bottom
+                    }
+                    source: (tabs.selectedTab === tab1) ? Qt.resolvedUrl("OverviewPage.qml") : ""
+                }
             }
 
             Tab {
+                id: tab2
                 title: i18n.tr("Tweak")
-                page: Page {
-                    Label {
-                        anchors.centerIn: parent
-                        text: "Use header to navigate between tabs"
+                page:Loader{
+                    id: tweakPage
+                    parent: tab2
+                    anchors{
+                        left:parent.left
+                        right: parent.right
+                        bottom: parent.bottom
+                    }
+                    source: (tabs.selectedTab === tab2) ? Qt.resolvedUrl("TweakPage.qml") : ""
+                    onLoaded: {
+                        item.side= mainPage.item.side
                     }
                 }
             }
 
             Tab {
-                title: i18n.tr("Admins")
-                page: Page {
-                    Label {
-                        anchors.centerIn: parent
-                        text: "Use header to navigate between tabs"
+                id: tab3
+                title: i18n.tr("About")
+                page:Loader{
+                    id:aboutPage
+                    parent: tab3
+                    anchors{
+                        left:parent.left
+                        right: parent.right
+                        bottom: parent.bottom
+                    }
+                    source: (tabs.selectedTab === tab3) ? Qt.resolvedUrl("AboutPage.qml") : ""
+                    onLoaded: {
+                        item.side= mainPage.item.side
                     }
                 }
             }
         }
 
-    }*/
+    }
 }
 
